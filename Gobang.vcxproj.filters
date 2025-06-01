@@ -18,10 +18,78 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="isWin.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mainMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="isInRect.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="isInRect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="isWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="musicMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oneMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="twoMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="controlMenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="setting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="controlSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="controlMusic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
       <Filter>源文件</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="musicMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="soundMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mainMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="oneMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="twoMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="controlMenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gameState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="setting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="controlSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="controlMusic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

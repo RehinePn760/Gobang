@@ -1,2 +1,7 @@
-﻿  main.cpp
+﻿  controlSetting.cpp
+  isInRect.cpp
+  twoMenu.cpp
+  正在生成代码...
+Gobang\x64\Debug\isInRect.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+Gobang\x64\Debug\isWin.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
   Gobang.vcxproj -> C:\Users\Yuzhique\Desktop\Gobang\x64\Debug\Gobang.exe
