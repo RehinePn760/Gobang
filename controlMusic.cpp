@@ -1,5 +1,8 @@
 #include"controlMusic.h"
 #include"gameState.h"
+//文件名 controlMusic.cpp
+//负责：WYJ
+//功能：音乐界面功能
 void controlMusic(ExMessage& msg, gameState& menuState)
 {
 	setlinecolor(WHITE);

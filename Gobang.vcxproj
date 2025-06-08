@@ -127,8 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Chess.cpp" />
     <ClCompile Include="controlMusic.cpp" />
     <ClCompile Include="controlSetting.cpp" />
+    <ClCompile Include="data2out.cpp" />
+    <ClCompile Include="init.cpp" />
     <ClCompile Include="isInRect.cpp" />
     <ClCompile Include="isInRect.h" />
     <ClCompile Include="isWin.cpp" />
@@ -136,23 +139,26 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="musicMenu.cpp" />
-    <ClCompile Include="oneMenu.cpp" />
-    <ClCompile Include="setting.cpp" />
+    <ClCompile Include="overMenu.cpp" />
+    <ClCompile Include="settingMenu.cpp" />
     <ClCompile Include="controlMenu.cpp" />
     <ClCompile Include="twoMenu.cpp" />
+    <ClCompile Include="data2in.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chess.h" />
     <ClInclude Include="controlMusic.h" />
     <ClInclude Include="controlSetting.h" />
+    <ClInclude Include="data2.h" />
     <ClInclude Include="gameState.h" />
+    <ClInclude Include="init.h" />
     <ClInclude Include="mainMenu.h" />
     <ClInclude Include="musicMenu.h" />
-    <ClInclude Include="oneMenu.h" />
-    <ClInclude Include="setting.h" />
-    <ClInclude Include="soundMenu.h" />
+    <ClInclude Include="overMenu.h" />
+    <ClInclude Include="settingMenu.h" />
     <ClInclude Include="controlMenu.h" />
     <ClInclude Include="twoMenu.h" />
   </ItemGroup>

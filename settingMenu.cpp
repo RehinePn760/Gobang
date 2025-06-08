@@ -1,4 +1,7 @@
-#include"setting.h"
+#include"settingMenu.h"
+//文件名：settingMenu.cpp
+//负责：WYJ
+//功能：设置界面
 void setting()
 {
 	IMAGE img;

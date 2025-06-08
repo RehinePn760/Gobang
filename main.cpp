@@ -1,30 +1,40 @@
 #include<iostream>
 #include<graphics.h>
-#include<conio.h>
 #include<vector>
 #include"mainMenu.h"
 #include"isInRect.h"
-#include"oneMenu.h"
 #include"twoMenu.h"
 #include"controlMenu.h"
+#include"settingMenu.h"
+#include"musicMenu.h"
 #include"controlSetting.h"
 #include"controlmusic.h"
 #include"gameState.h"
-#include"setting.h"
-#include"musicMenu.h"
-
+#include "Chess.h"
+#include "data2.h"
 
 using namespace std;
 
-enum gameState menuState = MENU;
-ExMessage msg;
+enum gameState menuState = MENU;//界面信息
 
-bool needRedraw = true;
+ExMessage msg;//鼠标信息
+
+bool needRedraw = true;//是否切换界面
+int flag = 0;//记录判断该哪一方落子黑0白1
+
+vector<vector<int>> board(15, vector<int>(15, -1));//初始为-1 双人的棋盘
+
 
 
 int main()
-{
+{	
+	board.resize(15);
+	for (int i = 0; i < board.size(); i++) {
+		board[i].resize(15, -1); // 每行15列，初始值-1
+	}//用下标操作前必须操作步骤
+
 	mainmenu();
+	data2in();//读取双人棋盘数据
 	
 	while (true)
 	{
@@ -36,9 +46,6 @@ int main()
 			{
 			case MENU:
 				mainmenu();
-				break;
-			case ONEGAME:
-				oneMenu();
 				break;
 			case TWOGAME:
 				twoMenu();

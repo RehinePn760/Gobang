@@ -1,15 +1,10 @@
 #include"controlMenu.h"
 #include"gameState.h"
+//文件名 controlMenu.cpp
+//负责：WYJ
+//功能：提供按钮反馈 切换页面
 void controlMenu(ExMessage& msg , gameState&menuState)
 {	
-
-		setlinecolor(WHITE);
-		if (isInRect(msg, 390, 200, 510 - 390, 240 - 200))
-		{
-			setlinecolor(RED);
-			if (msg.message == WM_LBUTTONDOWN)menuState = ONEGAME;
-		}
-		rectangle(390, 200, 510, 240);
 
 		setlinecolor(WHITE);
 		if (isInRect(msg, 390, 260, 510 - 390, 290 - 260))
