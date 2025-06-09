@@ -33,7 +33,7 @@ int twoMenu()
 	line(75 + 14 * 32, 26, 75 + 14 * 32, 26 + 480 - 32);//绘制右下边界线
 
 	setbkmode(0);//背景颜色透明；
-	settextcolor(RED);//设置颜色
+	settextcolor(BLACK);//设置颜色
 	settextstyle(40, 0, _T("Microsoft YaHei"));//设置字体大小和颜色
 	outtextxy(650, 40, "玩家一：黑棋");//填充文字（起点x，起点y）
 	outtextxy(650, 40 * 2 + 10, "玩家二：白棋");
