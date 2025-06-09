@@ -4,7 +4,7 @@
 //负责：WYJ
 //功能：设置界面
 #include<iostream>
-#include <graphics.h>
+#include<graphics.h>
 #include<vector>
 using namespace std;
 void setting();

@@ -17,7 +17,7 @@ int isWin(int x, int y, int flag)
 		if (board[x + i][y] == mark)
 		{
 			count++;
-			cout << count << endl;
+			//cout << count << endl;
 			if (5 == count) {
 				//cout << "-count" << endl;
 				return  mark;
@@ -35,7 +35,7 @@ int isWin(int x, int y, int flag)
 		if (board[x - i][y] == mark)
 		{
 			count++;
-			cout << count << endl;
+			//cout << count << endl;
 			if (5 == count) {
 				//cout << "-count" << endl;
 				return  mark;
@@ -136,7 +136,7 @@ int isWin(int x, int y, int flag)
 		if (board[x + i][y - i] == mark)
 		{
 			count++;
-			cout << count << endl;
+			//cout << count << endl;
 			if (5 == count) 
 			{
 				//cout << "/count" << endl;

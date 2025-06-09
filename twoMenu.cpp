@@ -85,7 +85,7 @@ int twoMenu()
 			bool isHover = isInRect(msg, 650, 166, 250, 166);// 检查鼠标是否在按钮区域内
 			
 			if (msg.message == WM_LBUTTONDOWN && isHover) {// 处理鼠标点击
-				cout << "按钮被点击" << endl;
+				//cout << "按钮被点击" << endl;
 				
 				init();
 				goto A;
@@ -93,7 +93,7 @@ int twoMenu()
 			bool isH = isInRect(msg, 650, 166*2, 250, 166);// 检查鼠标是否在按钮区域内
 
 			if (msg.message == WM_LBUTTONDOWN && isH) {// 处理鼠标点击
-				cout << "按钮被点击" << endl;
+				//cout << "按钮被点击" << endl;
 				mainmenu();
 				menuState = MENU;
 				return 0;
@@ -111,6 +111,14 @@ int twoMenu()
 					{
 						C.setX(i * 32 + 75);
 						C.setY(j * 32 + 26);
+						/*if ((C.getX() - 75) >= 15 || (C.getY() - 26) >= 15 || (C.getX() - 75) < 0 || (C.getY() - 26) < 0)
+						{
+							cout << "OK" << endl;
+						}
+						else
+						{
+							cout << "range out" << endl;
+						}*/
 					}
 				}
 			}
@@ -169,16 +177,16 @@ int twoMenu()
 
 
 
-				cout << "*****************************" << endl;//棋盘日志
+				cout << "********************************************************************************************************************" << endl;//棋盘日志
 				for (int i = 0; i < 15; i++)
 				{
 					for (int j = 0; j < 15; j++)
 					{
-						cout << board[j][i];
+						cout << board[j][i] << "\t";
 					}
 					cout << endl;
 				}
-				cout << "*****************************" << endl;
+				cout << "********************************************************************************************************************" << endl;
 			}
 
 		}
