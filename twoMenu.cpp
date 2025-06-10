@@ -111,18 +111,10 @@ int twoMenu()
 					{
 						C.setX(i * 32 + 75);
 						C.setY(j * 32 + 26);
-						/*if ((C.getX() - 75) >= 15 || (C.getY() - 26) >= 15 || (C.getX() - 75) < 0 || (C.getY() - 26) < 0)
-						{
-							cout << "OK" << endl;
-						}
-						else
-						{
-							cout << "range out" << endl;
-						}*/
+						
 					}
 				}
 			}
-
 
 			if (board[(C.getX() - 75) / 32][(C.getY() - 26) / 32] != (-1))  continue;//避免同一位置落子
 
@@ -140,13 +132,13 @@ int twoMenu()
 				{
 
 					setfillcolor(WHITE);//白子
-					board[(C.getX() - 75) / 32][(C.getY() - 26) / 32] = 1;
+					board[(C.getX() - 75) / 32][(C.getY() - 26) / 32] = 1;//存入数组
 					data2out();
 					if (mark == isWin((C.getX() - 75) / 32, (C.getY() - 26) / 32, flag))
 					{
 						cout << "WIN WHITE" << endl;
-						init();//初始化棋盘
 						overMenu(mark);
+						init();//初始化棋盘
 						mainmenu();
 						menuState = MENU;//结束后返回主界面
 						return 0;
@@ -162,8 +154,8 @@ int twoMenu()
 					if (mark == isWin((C.getX() - 75) / 32, (C.getY() - 26) / 32, flag))
 					{
 						cout << "WIN BLACK" << endl;
-						init();//初始化棋盘
 						overMenu(mark);
+						init();//初始化棋盘
 						mainmenu();
 						menuState = MENU;//结束后返回主界面
 						return 0;

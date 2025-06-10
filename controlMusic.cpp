@@ -6,9 +6,9 @@
 void controlMusic(ExMessage& msg, gameState& menuState)
 {
 	setlinecolor(WHITE);
-	if (isInRect(msg, 330, 130, 530-330, 190-130))
+	if (isInRect(msg, 385, 135, 530-385, 185-135))
 	{
-		setlinecolor(RED);
+		setlinecolor(BROWN);
 		if (msg.message == WM_LBUTTONDOWN) {
 			
 			mciSendString("close BGM2 ", NULL, 0, NULL);//防止两首同时播放
@@ -18,12 +18,12 @@ void controlMusic(ExMessage& msg, gameState& menuState)
 			mciSendString("setaudio BGM1 volume to 600", NULL, 0, NULL);//调节合适音量
 		}
 	}
-	rectangle(330, 130,  530,  190);
+	rectangle(385, 135,  530,  185);
 
 	setlinecolor(WHITE);
-	if (isInRect(msg, 330, 220, 522-330, 260-220))
+	if (isInRect(msg, 385, 210, 530 - 385, 260 -215))
 	{
-		setlinecolor(RED);
+		setlinecolor(BROWN);
 		if (msg.message == WM_LBUTTONDOWN) {
 
 			mciSendString("close BGM1 ", NULL, 0, NULL);//防止两首同时播放
@@ -33,26 +33,26 @@ void controlMusic(ExMessage& msg, gameState& menuState)
 			mciSendString("setaudio BGM2 volume to 600", NULL, 0, NULL); // 调节合适音量
 		}
 	}
-	rectangle(330, 220, 522, 260);
+	rectangle(385, 210, 530, 260);
 
 	setlinecolor(WHITE);
-	if (isInRect(msg, 340, 290, 422-340, 350-290))
+	if (isInRect(msg, 385, 285, 465 - 385, 330- 290))
 	{
-		setlinecolor(RED);
+		setlinecolor(BROWN);
 		if (msg.message == WM_LBUTTONDOWN) {
 			mciSendString("close BGM1 ", NULL, 0, NULL);
 			mciSendString("close BGM2 ", NULL, 0, NULL);
 		}
 	}
-	rectangle(340, 290, 422, 350);
+	rectangle(385, 285, 465, 330);
 
 
 	setlinecolor(WHITE);
-	if (isInRect(msg, 330, 370, 430-330, 420-370))
+	if (isInRect(msg, 385, 345, 465 - 385, 395 - 345))
 	{
-		setlinecolor(RED);
+		setlinecolor(BROWN);
 		if (msg.message == WM_LBUTTONDOWN)menuState = SSETTING;
 
 	}
-	rectangle(330, 370, 430 , 420);
+	rectangle(385, 345, 465, 395);
 }

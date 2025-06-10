@@ -35,9 +35,9 @@ int isWin(int x, int y, int flag)
 		if (board[x - i][y] == mark)
 		{
 			count++;
-			//cout << count << endl;
+			
 			if (5 == count) {
-				//cout << "-count" << endl;
+				
 				return  mark;
 			}
 		}
@@ -49,14 +49,14 @@ int isWin(int x, int y, int flag)
 	count = 1;//初始化为1
 	//**************************************************************************//
 
-	for (int i = 1; i < 5; i++)//竖向 上
+	for (int i = 1; i < 5; i++)//竖向 下
 	{
 		if (y + i >= 15) break;//防止越界
 		if (board[x][y + i] == mark)
 		{
 			count++;
 			if (5 == count) {
-				//cout << "|count" << endl;
+				
 				return  mark;
 			}
 		}
@@ -65,14 +65,14 @@ int isWin(int x, int y, int flag)
 			break;
 		}
 	}
-	for (int i = 1; i < 5; i++)//竖向 下
+	for (int i = 1; i < 5; i++)//竖向 上
 	{
 		if (y - i < 0) break;//防止越界
 		if (board[x][y - i] == mark)
 		{
 			count++;
 			if (5 == count) {
-				//cout << "|count" << endl;
+				
 				return  mark;
 			}
 
@@ -95,7 +95,7 @@ int isWin(int x, int y, int flag)
 		{
 			count++;
 			if (5 == count) {
-				//cout << "\count" << endl;
+				
 				return  mark;
 			}
 
@@ -115,7 +115,7 @@ int isWin(int x, int y, int flag)
 			count++;
 			if (5 == count)
 			{
-				//cout << "\count"  << endl;
+				
 				return  mark;
 			}
 			 
@@ -135,11 +135,10 @@ int isWin(int x, int y, int flag)
 		if (board[x + i][y - i] == mark)
 		{
 			count++;
-			//cout << count << endl;
+			
 			if (5 == count) 
 			{
-				//cout << "/count" << endl;
-				
+			
 				return  mark;
 			}
 		}
@@ -158,7 +157,7 @@ int isWin(int x, int y, int flag)
 			
 			if (5 == count)
 			{
-				//cout << "/count" << endl;
+				
 				return  mark;
 			}
 			

@@ -7,21 +7,21 @@ void controlSetting(ExMessage& msg, gameState& menuState)
 {
 
 	setlinecolor(WHITE);
-	if (isInRect(msg, 430, 200, 510 - 430, 240 - 200))
+	if (isInRect(msg, 410, 175, 485 - 410, 220 - 175))
 	{
-		setlinecolor(RED);
+		setlinecolor(BROWN);
 		if (msg.message == WM_LBUTTONDOWN)menuState = MUSIC;
 
 	}
-	rectangle(420, 190, 510, 240 );
+	rectangle(410, 175, 485, 220 );
 
 	setlinecolor(WHITE);
-	if (isInRect(msg, 430, 340, 510 - 430, 390 - 340))
+	if (isInRect(msg, 410, 345, 485 - 410, 390 - 345))
 	{
-		setlinecolor(RED);
+		setlinecolor(BROWN);
 		if (msg.message == WM_LBUTTONDOWN)menuState = MENU;
 
 	}
-	rectangle(430, 340, 510 , 390 );
+	rectangle(410, 345, 485, 390);
 
 }
